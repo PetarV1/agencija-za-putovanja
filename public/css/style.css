@@ -1,0 +1,506 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu',sans-serif;
+} /*zvjezdica znaci da oznacavam sve elemente sajta*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/**** Navigacija ****/
+
+.test {
+    font-size: 40px;
+    color:red;
+}
+
+.pre-header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.40)), url("../images/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.pre-header-admin {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/adminbackground.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-admin {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-admin ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-admin ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.nav-admin ul li:hover::after {
+    width: 100%;
+}
+
+.nav-admin ul li a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 140px;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 60px;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+
+    .nav {
+        width: 50%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(37, 150, 190);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after {
+    width: 100%;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 5vw;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.gumb {
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: rgb(37, 150, 190);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.gumb:hover {
+    background: transparent;
+    width: 200px;
+}
+
+.free-quote-btn a{
+    background-color: rgb(37, 150, 190);
+    border: 1px solid #fff;
+    padding: 6px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.free-quote-btn a:hover {
+    background-color: transparent;
+    color: rgb(37, 150, 190);
+    text-decoration: none;
+}
+
+.freebtn a {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 16px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.freebtn a:hover {
+    background-color: rgb(37, 150, 190);
+    color: #fff;
+    text-decoration: none;
+}
+
+.forme ul li a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.forme ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0 10px;
+    position: relative;
+}
+
+
+/***** Srednji dio (hero) *****/
+
+.hero-section {
+    background-image: url("../images/wallpaper.jpg"); /*ove dvi tocke znaci da se vracam u nazad jedan direktorij.*/
+    height:800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 85%;
+}
+.hero-section .container h1{
+        font-size:92px;
+        color: white;
+        padding-top:300px;
+        text-align: center;
+}
+
+
+/***** Ponuda *****/
+.ponuda {
+    background-color: rgb(196, 195, 195);
+    padding: 30px 30px;
+
+}
+.ponuda h1{
+    font-weight: 900;
+    font-size: 34px;
+    padding-bottom: 5px;
+    color:white;
+}
+.title {
+    text-align: center;
+    padding: 70px 0 30px 0;
+    font-weight: 100;
+    color: gray;
+
+}
+.title p{
+    font-size: 18px;
+    color: white;
+}
+.card-body a{
+    color:lightskyblue;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: auto;
+    font-weight: 600;
+}
+.card-body a:hover{
+    color:turquoise;
+    text-decoration: none;
+}
+.row .col-md-4 img{
+    height: 200px;
+    width: 348px;
+}
+
+.cijena{
+    background-color: lightskyblue;
+    height:35px;
+}
+
+
+.cijena p{
+    margin-top:2px;
+    font-size: 20px;
+    text-align: right;
+    font-weight: 500;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    text-align: center;
+}
+
+.container .row{
+    margin-bottom:20px;
+}
+
+.icons ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+
+/***** Tim *****/
+.tim {
+    padding: 70px 0 70px 0;
+}
+
+.tim h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 100;
+    color: gray;
+}
+.tim .col-md-4 {
+    padding-bottom: 20px;
+}
+.card-body {
+    box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.1);
+}
+.petar {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/7fd3475e-5aae-4aee-a735-8dcef637a4f6.jpg");
+    height: 250px;
+    border: 1px solid #000000;
+}
+
+.ivan {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/ivanslika.jpg");
+    height: 250px;
+    border: 1px solid #000000;
+}
+/***** tehnologije *****/
+.tehnologije{
+    background-color: rgb(196, 195, 195);
+}
+
+.tehnologije ul {
+    list-style: none;
+    margin-top: 5px;
+    text-align: center;
+    padding:30px;
+
+}
+.tehnologije ul li{
+    color: white;
+    font-size: 20px;
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+    bottom: 0;
+}
+
+.pozadina {
+    background-image: url("../images/pozadina.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 850px;
+}
+
+.pt {
+    color: white;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+.upozorenje {
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.6);
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 3px;
+    padding: 2px;
+    width: 75%;
+    font-size: 12px;
+    color: white;
+}
+
+.uspjesnaregistracija {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    font-size: 15px;
+    background-color: #3369ff;
+    border-radius: 0.15em;
+    box-sizing: border-box;
+    color: white;
+    padding: 0.7em 1.4em;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+}
+
+.uspjesnaregistracija p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.uspjesnoobrisan{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    font-size: 15px;
+    background-color: #dc3545;
+    border-radius: 0.15em;
+    box-sizing: border-box;
+    color: white;
+    padding: 0.7em 1.4em;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+}
+
+.uspjesnoobrisan p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.odjavabtnadmin
+{
+    color: white;
+    background: #007bff;
+    padding: 6px;
+    border: none;
+}
+
+.odjavabtnglavna{
+    background-color: transparent;
+    padding: 10px 16px;
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+}
+
+.odjavabtnglavna:hover {
+    background-color: rgb(37, 150, 190);
+    color: #fff;
+}
+
+.h1naslov  {
+    font-size:30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 35px;
+}
+/****search********/
+.pretraga {
+    outline: none;
+    border: none;
+    max-width: 200px;
+    border-radius: 10px;
+    padding: 6px;
+}
+.pretraga:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+.odjavabtnadmin:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+}
+/*********prognoza********/
+.content .weather{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 260px;
+    margin-left: 40px;
+}
+/******printanje*********/
+.printgumb{
+    background-color: turquoise;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+@media print{
+    body *{
+        visibility: hidden;
+    }
+    .print-container, .print-container *{
+        visibility: visible;
+    }
+}
+/******checkout*******/
+.checkoutforma{
+    background-color: #999999;
+}
+.checkoutforma h3{
+    color:white;
+    font-weight: 20;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.checkoutforma hr {
+    width: 80%;
+    margin: auto;
+}
+.checkoutforma .odjavabtnadmin{
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
